@@ -10,4 +10,34 @@ app = Client(
     bot_token=bot_token
 )
 
+
+await app.send_message(
+            "me",  # Edit this
+            "This is a InlineKeyboardMarkup example",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [  # First row
+                        InlineKeyboardButton(  # Generates a callback query when pressed
+                            "Button",
+                            callback_data="Official Group"
+                        ),
+                        InlineKeyboardButton(  # Opens a web URL
+                            "URL",
+                            url="https://docs.pyrogram.org"
+                        ),
+                    ],
+                    [  # Second row
+                        InlineKeyboardButton(  # Opens the inline interface
+                            "Choose chat",
+                            switch_inline_query=""
+                        ),
+                        InlineKeyboardButton(  # Opens the inline interface in the current chat
+                            "Inline here",
+                            switch_inline_query_current_chat="pyrogram"
+                        )
+                    ]
+                ]
+            )
+        )
+
 app.run()

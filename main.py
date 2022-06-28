@@ -78,7 +78,7 @@ async def account_login(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
 
-    path = f"./downloads/{m.chat.id}"
+    path = f"./downloads/"
 
     try:    
         with open(x, "r") as f:

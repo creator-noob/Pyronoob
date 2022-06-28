@@ -1,4 +1,4 @@
-# Modified Text Pyro Not by @noob_creator
+# Modified Text Pyro Bot by @noob_creator
 
 # Fix
  File Directory 

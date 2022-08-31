@@ -48,6 +48,14 @@ import sys
 import re
 import os
 
+
+API_ID = 14560088
+API_HASH = "74a2665339484da3eaaed5f4fe16da79"
+BOT_TOKEN = "5027731817:AAEdVdwm2ljYDaGqDJc8iOv-iWkwqerrTGs"
+#NAME = "BlackOuT"
+API_ID = os.getenv('API_ID')
+API_HASH = os.getenv('API_HASH')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 bot = Client(
     "bot",
     bot_token=os.environ.get("BOT_TOKEN"),
